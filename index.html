@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed majeed J - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <!-- Professional Popup Window -->
+    <div id="portfolio-popup" style="position:fixed;top:0;left:0;width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;background:rgba(30,41,59,0.55);z-index:2000;opacity:0;pointer-events:none;transition:opacity 0.5s;">
+        <div style="background:linear-gradient(135deg,#43cea2 0%,#185a9d 100%);padding:2.5rem 3.5rem;border-radius:1.2rem;box-shadow:0 8px 32px rgba(0,0,0,0.18);display:flex;flex-direction:column;align-items:center;gap:1rem;min-width:320px;max-width:90vw;">
+            <div style="font-size:2rem;font-weight:700;color:#fff;letter-spacing:1px;text-align:center;">
+                Welcome to Mohammed Majeed portfolio website
+            </div>
+            <div style="font-size:1.1rem;color:#e0e0e0;text-align:center;">
+                Ideas. Skills. Projects. Experience.
+            </div>
+            <button id="close-portfolio-popup" style="margin-top:1.2rem;padding:0.7rem 2rem;font-size:1rem;font-weight:600;color:#185a9d;background:#fff;border:none;border-radius:2rem;box-shadow:0 2px 8px rgba(67,206,162,0.12);cursor:pointer;transition:background 0.2s;">
+                let’s explore
+            </button>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const popup = document.getElementById('portfolio-popup');
+            const closeBtn = document.getElementById('close-portfolio-popup');
+            setTimeout(() => {
+                popup.style.opacity = '1';
+                popup.style.pointerEvents = 'auto';
+            }, 300);
+            closeBtn.addEventListener('click', () => {
+                popup.style.opacity = '0';
+                popup.style.pointerEvents = 'none';
+            });
+        });
+    </script>
+    <!-- Fullscreen Popup Message with Enhanced Animations -->
+    <div id="popup-overlay" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.5);opacity:0;pointer-events:none;transition:opacity 0.5s;z-index:1000;"></div>
+</div>
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:2rem;">
+        <div style="width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,#43cea2 0%,#185a9d 100%);box-shadow:0 4px 24px rgba(67,206,162,0.18);display:flex;align-items:center;justify-content:center;position:relative;">
+            <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Developer Avatar" style="width:90px;height:90px;border-radius:50%;border:4px solid #fff;box-shadow:0 2px 8px rgba(67,206,162,0.12);animation:avatarPulse 2s infinite;">
+            <span style="position:absolute;bottom:8px;right:12px;background:#ffd200;color:#333;padding:0.2rem 0.7rem;border-radius:1rem;font-size:0.9rem;font-weight:600;box-shadow:0 2px 8px rgba(250,200,100,0.18);">
+        </div>
+        <div style="margin-top:1rem;font-size:1.1rem;color:#2575fc;font-weight:600;letter-spacing:1px;">
+            Building colorful experiences & passionate solutions
+        </div>
+    </div>
+    <!-- Animated Experience Timeline -->
+   
+    <!-- Fullscreen Popup Message -->
+    <div id="popup-overlay" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.5);opacity:0;pointer-events:none;transition:opacity 0.5s;z-index:1000;">
+        <div id="popup-message" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0.95);background:linear-gradient(135deg,#6a11cb 0%,#2575fc 100%);color:#fff;padding:2rem 3rem;border-radius:1rem;box-shadow:0 8px 32px rgba(0,0,0,0.2);font-size:1.3rem;opacity:0;transition:all 0.5s;">
+            Welcome to Mohammed Majeed portfolio website 
+        </div>
+    </div>
+    <style>
+        body {
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s;
+        }
+        body.centered {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        body:not(.centered) {
+            display: block;
+        }
+        header {
+            background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0 1rem 0;
+            box-shadow: 0 2px 8px rgba(67,206,162,0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: rgba(255,255,255,0.95);
+            border-radius: 1.2rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 2rem 2.5rem;
+        }
+        .section {
+            margin-bottom: 2.5rem;
+        }
+        .section h2 {
+            color: #2575fc;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #6a11cb;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            background: linear-gradient(90deg,#f7971e 0%,#ffd200 100%);
+            color: #333;
+            margin-bottom: 0.7rem;
+            padding: 0.6rem 1rem;
+            border-radius: 0.7rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(250,200,100,0.08);
+            transition: background 0.3s;
+        }
+        .section ul.skills li {
+            background: linear-gradient(90deg,#43cea2 0%,#185a9d 100%);
+            color: #fff;
+            margin-right: 0.5rem;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            padding: 0.5rem 1.2rem;
+            border-radius: 2rem;
+            box-shadow: 0 2px 8px rgba(67,206,162,0.08);
+        }
+        .section a {
+            color: #6a11cb;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        .section a:hover {
+            color: #2575fc;
+            text-decoration: underline;
+        }
+        footer {
+            background: linear-gradient(90deg,#6a11cb 0%,#2575fc 100%);
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            border-radius: 0 0 1.2rem 1.2rem;
+            margin-top: 2rem;
+            font-size: 1rem;
+            box-shadow: 0 -2px 8px rgba(67,206,162,0.08);
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem 0.5rem;
+            }
+            header h1 {
+                font-size: 1.7rem;
+            }
+            .section h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+<style>
+    .section p {
+        text-align: justify;
+    }
+</style>
+    <!-- Fullscreen Popup Message -->
+    
+    </div>
+    <header>
+        <h1>Mohammed Majeed J</h1>
+        <p>MCA Graduate | Python Developer</p>
+    </header>
+    <div class="container">
+        <section class="section">
+            <h2>About Me</h2>
+            <p>
+                &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;  Hello!  I'm Mohammed Majeed J, a passionate Python developer with a strong academic background. I hold a Bachelor of Computer Applications (BCA) and a Master of Computer Applications (MCA) from Periyar University. I enjoy building efficient and scalable solutions using Python and continuously strive to learn new technologies.
+            </p>
+        </section>
+        <section class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>BCA</strong> - ISLMIAH COLLEGE (Autonomous)</li>
+                <li><strong>MCA</strong> - Periyar University</li> 
+            </ul>
+        </section>
+        <section class="section">
+            <h2>Skills</h2>
+            <ul class="skills">
+            <li class="skill-item" data-cert="certificates/html-css-js.png"><strong>Frontend Languages:</strong> HTML, CSS, JavaScript</li>
+            <li class="skill-item" data-cert="certificates/python-sql.png"><strong>Backend Languages:</strong> Python, SQL</li>
+            <li class="skill-item" data-cert="certificates/tools.png"><strong>Tools:</strong> GitHub, VS Code, Good with AI-powered tools</li>
+            </ul>
+            <section class="section">
+                <h2 id="projects-title" style="cursor:pointer;transition:color 0.2s;">Projects</h2>
+                <!-- Only GitHub ID triggers popup -->
+                <ul>
+                    <strong>GitHub ID:</strong>
+                    <a href="https://github.com/majeed74905/" id="github-link" style="color:#2575fc;font-weight:bold;">
+                        github.com/majeed74905
+                    </a>
+                    <p>
+
+                    </p>
+                    <li>
+
+                        <strong>Portfolio Website:</strong> Personal website built with HTML, CSS, and JavaScript to showcase skills and experience.
+                    </li>
+                    <li>
+                        <strong>Online Library Management System:</strong> Frontend language and backend lanuguage of SQL based application for managing student records.
+                    </li>
+                    <li>
+                        <strong>Weather App:</strong> Simple frontend app using JavaScript to fetch and display weather data from an API.
+                    </li>
+                </ul>
+                <!-- Projects Popup Modal -->
+                <div id="projects-modal" style="position:fixed;top:0;left:0;width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;background:rgba(30,41,59,0.65);z-index:4000;opacity:0;pointer-events:none;transition:opacity 0.5s;">
+                    <div class="projects-content" style="background:linear-gradient(135deg,#43cea2 0%,#185a9d 100%);padding:2rem 2.5rem;border-radius:1.2rem;box-shadow:0 8px 32px rgba(0,0,0,0.22);display:flex;flex-direction:column;align-items:center;gap:1rem;max-width:90vw;transform:scale(0.95);transition:transform 0.3s;">
+                        <span style="font-size:1.2rem;font-weight:600;color:#fff;text-align:center;margin-bottom:0.5rem;">GitHub Profile</span>
+                        <a href="https://github.com/majeed74905" target="_blank" style="color:#fff;font-weight:bold;font-size:1.1rem;text-decoration:underline;">github.com/majeed74905</a>
+                        <button onclick="closeProjectsModal()" style="margin-top:1rem;padding:0.5rem 1.5rem;font-size:1rem;font-weight:600;color:#fff;background:#2575fc;border:none;border-radius:2rem;box-shadow:0 2px 8px rgba(67,206,162,0.12);cursor:pointer;transition:background 0.2s;">
+                            Close
+                        </button>
+                    </div>
+                </div>
+                <script>
+                    // Only run popup when GitHub ID is clicked
+                    document.getElementById('github-link').addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const projModal = document.getElementById('projects-modal');
+                        projModal.style.opacity = '1';
+                        projModal.style.pointerEvents = 'auto';
+                        projModal.querySelector('.projects-content').style.transform = 'scale(1.05)';
+                    });
+                    function closeProjectsModal() {
+                        const projModal = document.getElementById('projects-modal');
+                        projModal.querySelector('.projects-content').style.transform = 'scale(0.95)';
+                        projModal.style.opacity = '0';
+                        projModal.style.pointerEvents = 'none';
+                    }
+                </script>
+            </section>
+            <p style="margin-top:1rem;">
+            </p>
+            <script>
+            // Modal popup for skills certificates
+            document.querySelectorAll('.skill-item').forEach(item => {
+                item.addEventListener('click', function() {
+                showCertModal(this.getAttribute('data-cert'), this.innerText);
+                });
+            });
+
+            function showCertModal(certSrc, title) {
+                let modal = document.getElementById('cert-modal');
+                let modalImg = document.getElementById('cert-modal-img');
+                let modalTitle = document.getElementById('cert-modal-title');
+                modalImg.src = certSrc;
+                modalTitle.textContent = title;
+                modal.style.opacity = '1';
+                modal.style.pointerEvents = 'auto';
+            }
+
+            function closeCertModal() {
+                let modal = document.getElementById('cert-modal');
+                modal.style.opacity = '0';
+                modal.style.pointerEvents = 'none';
+            }
+            </script>
+            <!-- Certificate Modal -->
+            <div id="cert-modal" style="position:fixed;top:0;left:0;width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;background:rgba(30,41,59,0.85);z-index:3000;opacity:0;pointer-events:none;transition:opacity 0.4s;">
+            <div style="background:linear-gradient(135deg,#185a9d 0%,#43cea2 100%);padding:2rem 2.5rem;border-radius:1.2rem;box-shadow:0 8px 32px rgba(0,0,0,0.22);display:flex;flex-direction:column;align-items:center;gap:1rem;max-width:90vw;position:relative;">
+                <span id="cert-modal-title" style="font-size:1.2rem;font-weight:600;color:#fff;text-align:center;margin-bottom:0.5rem;"></span>
+                <img id="cert-modal-img" src="" alt="Certificate" style="max-width:350px;width:100%;border-radius:0.7rem;box-shadow:0 2px 8px rgba(67,206,162,0.18);background:#fff;">
+                <button onclick="closeCertModal()" style="margin-top:1rem;padding:0.5rem 1.5rem;font-size:1rem;font-weight:600;color:#fff;background:#2575fc;border:none;border-radius:2rem;box-shadow:0 2px 8px rgba(67,206,162,0.12);cursor:pointer;transition:background 0.2s;">
+                Close
+                </button>
+            </div>
+            </div>
+            <style>
+            #cert-modal {
+                backdrop-filter: blur(6px);
+            }
+            #cert-modal button:hover {
+                background: #185a9d;
+            }
+            @media (max-width: 600px) {
+                #cert-modal img {
+                max-width: 90vw;
+                }
+                #cert-modal > div {
+                padding: 1rem 0.5rem;
+                }
+            }
+            
+                </script>
+                <!-- Projects Popup Modal -->
+                <div id="projects-modal" style="position:fixed;top:0;left:0;width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;background:rgba(30,41,59,0.65);z-index:4000;opacity:0;pointer-events:none;transition:opacity 0.5s;">
+                    <div class="projects-content" style="background:linear-gradient(135deg,#43cea2 0%,#185a9d 100%);padding:2rem 2.5rem;border-radius:1.2rem;box-shadow:0 8px 32px rgba(0,0,0,0.22);display:flex;flex-direction:column;align-items:center;gap:1rem;max-width:90vw;transform:scale(0.95);transition:transform 0.3s;">
+                        <span style="font-size:1.2rem;font-weight:600;color:#fff;text-align:center;margin-bottom:0.5rem;">GitHub Profile</span>
+                        <a href="https://github.com/majeed74905" target="_blank" style="color:#fff;font-weight:bold;font-size:1.1rem;text-decoration:underline;">github.com/majeed74905</a>
+                        <button onclick="closeProjectsModal()" style="margin-top:1rem;padding:0.5rem 1.5rem;font-size:1rem;font-weight:600;color:#fff;background:#2575fc;border:none;border-radius:2rem;box-shadow:0 2px 8px rgba(67,206,162,0.12);cursor:pointer;transition:background 0.2s;">
+                            Close
+                        </button>
+                    </div>
+                </div>
+                <ul>
+                 
+            </a>
+            </p>
+
+            </style>
+        </section>
+        <section class="section">
+            <!-- Google Map removed as requested -->
+            <h2>Contact Details</h2>
+            <p>Email: <a href="mailto:majeed74905@gmail.com">majeed74905@gmail.com</a></p>
+            <p>Phone: <a href="tel:+919361971840">+91 9361971840</a></p>
+            <p 
+            style="color:#222;font-weight;">Address: <span 
+            style="color:#6a11cb;font-weight:bold;"> 104/197 Police Station Road, S.Kodiyur, Jolarpettai, Tirupathur District</p>
+            <p>
+           
+            </div>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Mohammed Majeed J. All rights reserved.
+    </footer>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const overlay = document.getElementById('popup-overlay');
+            const popup = document.getElementById('popup-message');
+            // Show overlay and popup
+            overlay.style.opacity = '1';
+            overlay.style.pointerEvents = 'auto';
+            setTimeout(() => {
+                popup.style.opacity = '1';
+                popup.style.transform = 'scale(1.05)';
+            }, 100); // slight delay for smoothness
+            // Hide after 3 seconds
+            setTimeout(() => {
+                popup.style.opacity = '0';
+                popup.style.transform = 'scale(0.95)';
+                overlay.style.opacity = '0';
+                overlay.style.pointerEvents = 'none';
+            }, 3100);
+        });
+    </script>
+</body>
+</html>
